@@ -1,3 +1,2 @@
 #!/bin/bash
-for file in *.html do cp "$file" "../$file" [ -f "../$file" ]  [ "$file" -nt "../$file" ]  rm "../$file"  echo "" done
-
+cp -un *.html ../
