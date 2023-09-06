@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s\n" $(bc <<< "ibase=5 $(echo $WATER | tr 'water' '01234') * ibase=5 $(echo $STIR | tr 'stir.' '01234')" | bc) | tr '0123456/' 'bestchol'
+printf "%e\n" $(( $((5#$(echo $WATER | tr water 01234))) * $((5#$(echo $STIR | tr stir. 01234))) )) tr 0123456/ bestchol
