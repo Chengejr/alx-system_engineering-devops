@@ -36,7 +36,7 @@ def get_employee_todo_progress(employee_id):
         done_tasks = len(completed_tasks)
         
         # Get employee name
-        employee_name = todos[0].get('username')
+        employee_name = todos[0].get('name')
         
         # Display progress
         print(f"Employee {employee_name} is done with tasks ({done_tasks}/{total_tasks}):")
@@ -56,4 +56,3 @@ if __name__ == "__main__":
     
     # Call the function with the provided employee ID
     get_employee_todo_progress(employee_id)
-
